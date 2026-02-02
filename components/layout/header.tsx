@@ -31,17 +31,16 @@ export function Header() {
       <div className="glass border-b border-white/10 safe-area-top">
         <div className="container mx-auto px-4 h-14 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 relative">
-              <Image
-                src="/src/img/logo.svg"
-                alt="UpStore"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <span className="font-semibold text-lg">UpStore</span>
-          </Link>
+<Link href="/" className="flex items-center">
+  <div className="w-40 h-10 relative">
+    <Image
+      src="/src/img/logo.svg"
+      alt="UpStore"
+      fill
+      className="object-contain"
+    />
+  </div>
+</Link>
 
           {/* Social Links */}
           <div className="flex items-center gap-2">
