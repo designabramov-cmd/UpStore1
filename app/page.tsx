@@ -13,7 +13,7 @@ export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-black pt-14">
       <Header />
       
       <BannerSlider />
