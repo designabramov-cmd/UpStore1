@@ -1,7 +1,7 @@
 // components/layout/header.tsx
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useUIStore } from '@/stores/ui-store';
@@ -31,21 +31,21 @@ export function Header() {
       <div className="glass border-b border-white/10 safe-area-top">
         <div className="container mx-auto px-4 h-14 flex items-center justify-between">
           {/* Logo */}
-<Link href="/" className="flex items-center">
-  <div className="w-40 h-10 relative">
-    <Image
-      src="/src/img/logo.svg"
-      alt="UpStore"
-      fill
-      className="object-contain"
-    />
-  </div>
-</Link>
+          <Link href="/" className="flex items-center">
+            <div className="w-40 h-10 relative">
+              <Image
+                src="/src/img/logo.svg"
+                alt="UpStore"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </Link>
 
           {/* Social Links */}
           <div className="flex items-center gap-2">
             {links.map((link) => (
-              <a
+              
                 key={link.id}
                 href={link.url}
                 target="_blank"
